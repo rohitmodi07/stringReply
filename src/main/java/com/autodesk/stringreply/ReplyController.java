@@ -46,6 +46,7 @@ public class ReplyController {
               }else {
                   messageRes = "Invalid input";
                   status = HttpStatus.BAD_REQUEST;
+                  break;
               }
           }
           return new ResponseEntity<ReplyMessage>(
